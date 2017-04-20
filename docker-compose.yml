@@ -1,0 +1,11 @@
+version: '2'
+services:
+  node:
+    build: ./dockers/node
+    container_name: node
+    ports:
+      - 3000:3000
+    volumes:
+      # for docker which supports cached, if not support - remove ":cached"
+      - ./:/app:cached
+    tty: true
