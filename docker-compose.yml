@@ -1,10 +1,19 @@
 version: '2'
 services:
-  node:
-    build: ./dockers/node
-    container_name: node
+  frontend:
+    build: ./dockers/frontend
+    container_name: frontend
     ports:
       - 3000:3000
+    volumes:
+      # for docker which supports cached, if not support - remove ":cached"
+      - ./:/app:cached
+    tty: true
+  backend:
+    build: ./dockers/backend
+    container_name: backend
+    ports:
+      - 3001:3000
     volumes:
       # for docker which supports cached, if not support - remove ":cached"
       - ./:/app:cached
