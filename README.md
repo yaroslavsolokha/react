@@ -21,5 +21,8 @@ Environment for react development.
 ##### 7. npm install --save nodemon
 ##### 8. npm install --save babel-preset-es2015
 ##### 9. npm install --save babel-cli
-##### 10. npm start
-##### 11. Happy hacking!
+##### 10. npm install --save sequelize
+##### 11. npm install --save mysql
+##### 12. npm install --save sequelize-cli
+##### 13. npm start
+##### 14. Happy hacking!
